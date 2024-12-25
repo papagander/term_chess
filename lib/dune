@@ -1,0 +1,3 @@
+(library
+ (name chess_engine)
+ (modules core pieces))

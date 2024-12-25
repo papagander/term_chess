@@ -1,0 +1,11 @@
+# Dune build artifacts
+_build/
+
+# Local Opam switch
+.opam-switch/
+
+# Editor/IDE files
+*.swp
+*.swo
+*.vscode/
+.idea/
