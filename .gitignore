@@ -1,5 +1,7 @@
 # Dune build artifacts
 _build/
+*.opam
+*.install
 
 # Local Opam switch
 .opam-switch/

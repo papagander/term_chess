@@ -7,7 +7,8 @@ module Core = struct
 
   type position_verify = 
     | Position of int * int
-    | Invalid
+    | Off_Board
+    | Occupied
 
   type piece_color = 
     | White
@@ -29,12 +30,12 @@ module Core = struct
     Printf.sprintf "%c%d" (file_num_to_char position.file) position.rank
 
   let check_position_on_board (rank: int) (file: int): position_verify =
-    if rank < 1 || rank > 8 || file < 1 || file > 8 then Invalid
+    if rank < 1 || rank > 8 || file < 1 || file > 8 then Off_Board
     else Position (rank, file)
 
   let create_position rank file =
     let new_pos = check_position_on_board rank file in
-    if not (new_pos = Invalid) then
+    if not (new_pos = Off_Board) then
       failwith (Printf.sprintf "Position %c%d outside board" (file_num_to_char file) rank)
     else
       { rank; file }
