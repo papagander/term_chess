@@ -1,3 +1,4 @@
 (library
  (name chess_engine)
- (modules core pieces))
+  (modules_without_implementation piece_type_manager)
+ (modules board piece piece_type_manager piece_type position ))

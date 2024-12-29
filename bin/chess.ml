@@ -1,2 +1,5 @@
-open Chess_core.Renderer
-let () = Renderer.test_draw
+module B = Chess_engine.Board
+
+let () =
+  let _empty_board = B.empty_board in
+  ();

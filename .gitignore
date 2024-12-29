@@ -1,3 +1,5 @@
+# Scratch dir
+_scratch/
 # Dune build artifacts
 _build/
 *.opam
