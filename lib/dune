@@ -1,4 +1,6 @@
-(library
+(LSP[ocamllsp][Info] Unable to find 'ocamlformat-rpc' binary. Types on hover may
+not be well-formatted. You need to install either 'ocamlformat' of version > 0.2
+1.0 or, otherwise, 'ocamlformat-rpc' package.library
  (name chess_engine)
   (modules_without_implementation piece_type_manager)
  (modules board piece piece_type_manager piece_type position ))
